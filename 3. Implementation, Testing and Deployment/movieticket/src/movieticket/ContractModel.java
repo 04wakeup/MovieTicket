@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package selectcontract;    
+package movieticket;    
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -22,7 +22,7 @@ import java.util.TreeSet;
     private int contractCounter; 
     private SortedSet<String> originCityList;
     
-    private static final String filename="C:\\Users\\dojun\\Sync\\ICS125\\Labs\\Lab06\\SelectContract06\\dojun849\\src\\selectcontract\\contracts.txt";
+    private static final String filename="C:\\Users\\dojun\\Sync\\ICS125\\Project\\MovieTicket\\3. Implementation, Testing and Deployment\\movieticket\\src\\contracts.txt";
     public ContractModel(){
         contractCounter = 0;
         theContracts = new ArrayList<Contract>(); 
