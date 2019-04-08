@@ -50,8 +50,7 @@ public class ContractView extends javax.swing.JFrame {
         jComboOriginCity = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Bid on Contracts");
-        setPreferredSize(new java.awt.Dimension(700, 500));
+        setTitle("Great Victoria Cinema");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -67,21 +66,21 @@ public class ContractView extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(204, 255, 204));
         jPanel2.setPreferredSize(new java.awt.Dimension(700, 500));
 
-        jLabel1.setText("Contract ID:");
+        jLabel1.setText("Title:");
 
         jPrevButton.setText("Previous");
 
-        jBidButton.setText("Bid");
+        jBidButton.setText("Choose");
 
         jNextButton.setText("Next");
 
-        jLabel2.setText("Origin;");
+        jLabel2.setText("Actors:");
 
-        jLabel3.setText("Destination:");
+        jLabel3.setText("Description:");
 
-        jLabel5.setText("Order:");
+        jLabel5.setText("Rate:");
 
-        jLabelContractCount.setText("n out of x Contracts");
+        jLabelContractCount.setText("n out of x movies");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -91,7 +90,7 @@ public class ContractView extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addGap(0, 280, Short.MAX_VALUE)
+                        .addGap(0, 164, Short.MAX_VALUE)
                         .addComponent(jPrevButton)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jBidButton)
@@ -136,7 +135,7 @@ public class ContractView extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jLabelOrderItem))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 153, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 102, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPrevButton)
                     .addComponent(jBidButton)
@@ -146,7 +145,7 @@ public class ContractView extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel4.setText("Filter by Origin:");
+        jLabel4.setText("Date:");
 
         jComboOriginCity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -156,14 +155,13 @@ public class ContractView extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(101, 101, 101)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 487, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 119, Short.MAX_VALUE)
-                        .addComponent(jComboOriginCity, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(122, 122, 122)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboOriginCity, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 487, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
