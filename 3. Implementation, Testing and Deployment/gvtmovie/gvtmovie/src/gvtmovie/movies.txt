@@ -1,0 +1,36 @@
+1,2019-05-01,12:00~14:00,Missing Link,James & Tom,G,Travel for missing link
+2,2019-05-01,14:00~16:00,Little,Murphy&Robert,PG,Story between girls
+3,2019-05-01,16:00~18:00,Avengers: Endgame,Hali&John,PG13,Action movies
+4,2019-05-01,18:00~20:00,After,Choi&Kim,R,Love story
+5,2019-05-01,20:00~22:00,Murder,Kevin&Dogulas,NC17,Horror movie ever
+6,2019-05-02,14:00~16:00,Missing Link,James & Tom,G,Travel for missing link
+7,2019-05-02,12:00~14:00,Little,Murphy&Robert,PG,Story between girls
+8,2019-05-02,12:00~14:00,Avengers: Endgame,Hali&John,PG13,Action movies
+9,2019-05-02,12:00~14:00,After,Choi&Kim,R,Love story
+10,2019-05-02,12:00~14:00,Murder,Kevin&Dogulas,NC17,Horror movie ever
+11,2019-05-03,12:30~14:30,Missing Link,James & Tom,G,Travel for missing link
+12,2019-05-03,12:00~14:00,Little,Murphy&Robert,PG,Story between girls
+13,2019-05-03,12:00~14:00,Avengers: Endgame,Hali&John,PG13,Action movies
+14,2019-05-03,12:00~14:00,After,Choi&Kim,R,Love story
+15,2019-05-03,12:00~14:00,Murder,Kevin&Dogulas,NC17,Horror movie ever
+16,2019-05-04,11:00~13:00,Missing Link,James & Tom,G,Travel for missing link
+17,2019-05-04,12:00~14:00,Little,Murphy&Robert,PG,Story between girls
+18,2019-05-04,12:00~14:00,Avengers: Endgame,Hali&John,PG13,Action movies
+19,2019-05-04,12:00~14:00,After,Choi&Kim,R,Love story
+20,2019-05-04,12:00~14:00,Murder,Kevin&Dogulas,NC17,Horror movie ever
+21,2019-05-05,12:00~14:00,Missing Link,James & Tom,G,Travel for missing link
+22,2019-05-05,12:00~14:00,Little,Murphy&Robert,PG,Story between girls
+23,2019-05-05,12:00~14:00,Avengers: Endgame,Hali&John,PG13,Action movies
+24,2019-05-05,12:00~14:00,After,Choi&Kim,R,Love story
+25,2019-05-05,12:00~14:00,Murder,Kevin&Dogulas,NC17,Horror movie ever
+26,2019-05-06,12:00~14:00,Missing Link,James & Tom,G,Travel for missing link
+27,2019-05-06,12:00~14:00,Little,Murphy&Robert,PG,Story between girls
+28,2019-05-06,12:00~14:00,Avengers: Endgame,Hali&John,PG13,Action movies
+29,2019-05-06,12:00~14:00,After,Choi&Kim,R,Love story
+30,2019-05-06,12:00~14:00,Murder,Kevin&Dogulas,NC17,Horror movie ever
+31,2019-05-07,12:00~14:00,Missing Link,James & Tom,G,Travel for missing link
+32,2019-05-07,12:00~14:00,Little,Murphy&Robert,PG,Story between girls
+33,2019-05-07,12:00~14:00,Avengers: Endgame,Hali&John,PG13,Action movies
+34,2019-05-07,12:00~14:00,After,Choi&Kim,R,Love story
+35,2019-05-07,12:00~14:00,Murder,Kevin&Dogulas,NC17,Horror movie ever
+36,2019-05-07,22:00~24:00,Murder,Kevin&Dogulas,NC17,Horror movie ever
