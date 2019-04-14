@@ -11,6 +11,7 @@ import java.util.SortedSet;
 class MovieController {
     
     private   MovieView theView;
+    
     private   MovieModel theModel; 
     private   ConfirmBid theBid; 
   public MovieController(MovieView theView, MovieModel theModel) {
@@ -24,6 +25,7 @@ class MovieController {
         this.theView.addcomboBoxListener(new ComboListener());
         this.theView.setMovieList(this.theModel.getMovieDate());//(this.theModel.getMovieDate());
         setUpDisplay();
+        
    }
     
    private void setUpDisplay(){
@@ -120,7 +122,7 @@ class MovieController {
    class BidButtonListener implements ActionListener{
      @Override
      public void actionPerformed(ActionEvent e){
-     System.out.println("test1");  
+     //System.out.println("test1");  
      //String temp = theView.getCountChildren();
      // System.out.println(theView.getCountChildren());
 //     System.out.println(theView.getCountChildren());
@@ -137,7 +139,7 @@ class MovieController {
             cb = new ConfirmBid(theView, true, c); 
             cb.setLocationRelativeTo(null);
             cb.setVisible(true);
-           
+            
         }catch(Exception ex){
            System.out.println(ex);
            theView.displayErrorMessage("Error: There is a problem setting a previous contract.");

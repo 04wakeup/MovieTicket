@@ -25,70 +25,76 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="248" pref="248" max="-2" attributes="0"/>
-              <Component id="jButtonPay" max="32767" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jButtonCancel" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
-              <Component id="jTextName" min="-2" pref="82" max="-2" attributes="0"/>
+              <EmptySpace min="250" pref="250" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabelTitle2" alignment="0" min="-2" pref="129" max="-2" attributes="0"/>
+                  <Component id="jLabelPST" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabelTitle1" alignment="0" min="-2" pref="129" max="-2" attributes="0"/>
+                  <Component id="jLabelTotal" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabelTitle" alignment="0" min="-2" pref="129" max="-2" attributes="0"/>
-                                  <Component id="jLabelGST" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel6" min="-2" pref="176" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="jLabelTitle" alignment="0" min="-2" pref="129" max="-2" attributes="0"/>
+                          <Component id="jLabelGST" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jRadioCredit" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="Card1" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
-                          <Component id="Card5" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jLabel7" min="-2" pref="176" max="-2" attributes="0"/>
+                          <Component id="jLabel6" min="-2" pref="176" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="Card2" min="-2" pref="60" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="Card3" min="-2" pref="68" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Component id="Card4" min="-2" pref="59" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="Card6" min="-2" pref="60" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="178" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Component id="jRadioDebit" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="250" pref="250" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabelTitle2" alignment="0" min="-2" pref="129" max="-2" attributes="0"/>
-                          <Component id="jLabelPST" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabelTitle1" alignment="0" min="-2" pref="129" max="-2" attributes="0"/>
-                          <Component id="jLabelTotal" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="109" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jButtonPay" min="-2" pref="89" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jButtonCancel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                              <Component id="jButtonPrint" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jTextName" alignment="0" min="-2" pref="145" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="106" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="Card1" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                                  <Component id="Card5" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="Card2" min="-2" pref="60" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="Card3" min="-2" pref="68" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                      <Component id="Card4" min="-2" pref="59" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="Card6" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="jComboPayMethod" min="-2" pref="160" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
@@ -107,11 +113,10 @@
                   <Component id="jLabelPST" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabelTotal" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jRadioCredit" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jRadioDebit" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jComboPayMethod" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -127,18 +132,18 @@
                   <Component id="Card5" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="Card6" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="jTextName" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                      <Component id="jButtonPay" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButtonCancel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jTextName" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jButtonPay" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonCancel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonPrint" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -213,16 +218,6 @@
     </Component>
     <Component class="javax.swing.JTextField" name="Card3">
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioCredit">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Credit"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioDebit">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Debit"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="text" type="java.lang.String" value="Valid until(MM/YYYY)"/>
@@ -237,6 +232,32 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Card6ActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel7">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Name:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButtonPrint">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Print"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonPrintActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboPayMethod">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="2">
+            <StringItem index="0" value="Credit"/>
+            <StringItem index="1" value="Debit"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
     </Component>
   </SubComponents>
 </Form>
