@@ -13,6 +13,7 @@ public class Movie {
     private String mActor;
     private String mRateId;
     private String mDesc;
+    private String countChildren, countAdult, countSenior;
     
     public static final int NUMBER_OF_MOVIE_ATTRIBUTES = 1000;
     public static final int INDEX_OF_MOVIE_NO = 0;
@@ -40,6 +41,14 @@ public class Movie {
     public String getmActor(){      return mActor;    }
     public String getmRateId(){      return mRateId;    }
     public String getmDesc(){      return mDesc;    }
+    
+    public void setCountChildren(String icountChildren){         countChildren = icountChildren;                    };
+    public String getCountChildren(){      return countChildren;    }
+    public void setCountAdult(String icountAdult){         countAdult = icountAdult;                    };
+    public String getCountAdult(){      return countAdult;    }
+    public void setCountSenior(String icountSenior){         countSenior = icountSenior;                    };
+    public String getCountSenior(){      return countSenior;    }
+    
     boolean contains(String iDate) {
       if (iDate == mDate) {
           return true;

@@ -1,5 +1,6 @@
 package gvtmovie;
 
+import java.awt.event.ActionListener;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -27,32 +28,38 @@ import javax.swing.JOptionPane;
  * and open the template in the editor.
  */
 
-/**
- *
- * @author C0472597
- */
+ 
 public class ConfirmBid extends javax.swing.JDialog {
 
-    /**
-     * Creates new form ConfirmBid
-     */
-    public ConfirmBid(JFrame f, boolean m, Movie theMovie) {
+    private int countChildren, countAdult, countSenior;
+   public ConfirmBid() {
+        initComponents();
+    }
+   public ConfirmBid(JFrame f, boolean m, Movie theMovie) { 
         super(f, m);
         initComponents();
-        
-        this.jLabelContractID.setText(theMovie.getContractID()); 
-        this.jLabelOrigin.setText(theMovie.getOriginCity());
-        this.jLabelDestination.setText(theContract.getDestCity());
-        this.jLabelOrder.setText(theContract.getOrderItem());
-        
-        Integer startValue = 100;
-        Integer minValue = 100;
-        Integer maxValue = 10000;
-        Integer stepValue = 50;
-        SpinnerModel numModel = new SpinnerNumberModel(startValue, minValue, maxValue, stepValue);
-        jSpinner1.setModel(numModel);
+          Double countChildren, countAdult, countSenior, totalAmt, totalPST, totalGST, finalAmt;
+          Double priceChildren = 7.99;
+          Double priceAdult = 10.99;
+          Double priceSenior = 8.50;
+          countChildren = Double.parseDouble(theMovie.getCountChildren());
+          countAdult =  Double.parseDouble(theMovie.getCountAdult());
+          countSenior = Double.parseDouble(theMovie.getCountSenior());          
+          
+          totalAmt = countChildren * priceChildren + countAdult * priceAdult + countSenior * priceSenior; 
+          totalPST = totalAmt * 0.07;
+          totalGST = totalAmt * 0.05;
+          finalAmt = totalAmt + totalPST + totalGST;
+//          String temp;
+//          temp = String.valueOf(totalPST);
+          this.jLabelGST.setText(String.valueOf(Math.round(totalGST*100)/100.0));   
+          this.jLabelPST.setText(String.valueOf(Math.round(totalPST*100)/100.0)); 
+          this.jLabelTotal.setText(String.valueOf(Math.round(finalAmt*100)/100.0)); 
+ 
         // String optionsFileName = System.getProperty("user.dir") + "\\src\\selectcontract\\output_bids.txt";
     }
+
+ 
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -63,28 +70,38 @@ public class ConfirmBid extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabelOrigin = new javax.swing.JLabel();
+        jLabelPST = new javax.swing.JLabel();
         jTextName = new javax.swing.JTextField();
-        jSpinner1 = new javax.swing.JSpinner();
         jLabelTitle = new javax.swing.JLabel();
-        jButtonSave = new javax.swing.JButton();
+        jButtonPay = new javax.swing.JButton();
         jButtonCancel = new javax.swing.JButton();
-        jLabelContractID = new javax.swing.JLabel();
-        jLabelDestination = new javax.swing.JLabel();
-        jLabelOrder = new javax.swing.JLabel();
+        jLabelGST = new javax.swing.JLabel();
+        jLabelTotal = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabelTitle1 = new javax.swing.JLabel();
+        jLabelTitle2 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        Card1 = new javax.swing.JTextField();
+        Card4 = new javax.swing.JTextField();
+        Card2 = new javax.swing.JTextField();
+        Card3 = new javax.swing.JTextField();
+        jRadioCredit = new javax.swing.JRadioButton();
+        jRadioDebit = new javax.swing.JRadioButton();
+        jLabel6 = new javax.swing.JLabel();
+        Card5 = new javax.swing.JTextField();
+        Card6 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Place bid on selected contract");
+        setTitle("Choose the deail for payment");
 
-        jLabelOrigin.setText("jLabel1");
+        jLabelPST.setText("jLabel1");
 
-        jLabelTitle.setText("Contract ID        Origin                Destination                Order");
+        jLabelTitle.setText("GST(5%)");
 
-        jButtonSave.setText("Pay");
-        jButtonSave.addActionListener(new java.awt.event.ActionListener() {
+        jButtonPay.setText("Pay");
+        jButtonPay.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonSaveActionPerformed(evt);
+                jButtonPayActionPerformed(evt);
             }
         });
 
@@ -95,123 +112,191 @@ public class ConfirmBid extends javax.swing.JDialog {
             }
         });
 
-        jLabelContractID.setText("jLabel1");
+        jLabelGST.setText("jLabel1");
 
-        jLabelDestination.setText("jLabel1");
+        jLabelTotal.setText("jLabel1");
 
-        jLabelOrder.setText("jLabel1");
+        jLabel1.setText("Paymethod:");
 
-        jLabel1.setText("Name:");
+        jLabelTitle1.setText("Total(CAD, $)");
+
+        jLabelTitle2.setText("PST(7%)");
+
+        jLabel5.setText("Card Number:");
+
+        Card1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Card1ActionPerformed(evt);
+            }
+        });
+
+        jRadioCredit.setText("Credit");
+
+        jRadioDebit.setText("Debit");
+
+        jLabel6.setText("Valid until(MM/YYYY)");
+
+        Card5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Card5ActionPerformed(evt);
+            }
+        });
+
+        Card6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Card6ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(248, 248, 248)
+                .addComponent(jButtonPay, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButtonCancel)
+                .addGap(73, 73, 73)
+                .addComponent(jTextName, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(128, 128, 128)
-                        .addComponent(jButtonSave)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButtonCancel))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabelContractID)
-                                .addGap(39, 39, 39)
-                                .addComponent(jLabelOrigin))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTextName, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(93, 93, 93)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(43, 43, 43)
-                                .addComponent(jLabelDestination)
-                                .addGap(43, 43, 43)
-                                .addComponent(jLabelOrder))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabelGST)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel5))
+                                .addGap(54, 54, 54))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jRadioCredit)
+                            .addComponent(Card1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Card5, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(Card2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(Card3, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(6, 6, 6)
+                                    .addComponent(Card4, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addComponent(Card6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(178, 178, 178)))
+                            .addComponent(jRadioDebit)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(jLabelTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 606, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(34, Short.MAX_VALUE))
+                        .addGap(250, 250, 250)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelTitle2, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelPST))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelTitle1, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelTotal))))
+                .addContainerGap(109, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(80, 80, 80)
-                .addComponent(jLabelTitle)
-                .addGap(35, 35, 35)
+                .addGap(48, 48, 48)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelOrigin)
-                    .addComponent(jLabelDestination)
-                    .addComponent(jLabelOrder)
-                    .addComponent(jLabelContractID))
-                .addGap(46, 46, 46)
+                    .addComponent(jLabelTitle)
+                    .addComponent(jLabelTitle1)
+                    .addComponent(jLabelTitle2))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
+                    .addComponent(jLabelGST)
+                    .addComponent(jLabelPST)
+                    .addComponent(jLabelTotal))
+                .addGap(62, 62, 62)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonSave)
-                    .addComponent(jButtonCancel))
-                .addGap(28, 28, 28))
+                    .addComponent(jLabel1)
+                    .addComponent(jRadioCredit)
+                    .addComponent(jRadioDebit))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Card4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Card3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Card2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Card1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6)
+                    .addComponent(Card5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Card6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jTextName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(14, 14, 14))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButtonPay)
+                        .addComponent(jButtonCancel)))
+                .addGap(47, 47, 47))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButtonSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSaveActionPerformed
+    public int getCountChildren(){       return countChildren;    }    
+    public int getCountAdult(){       return countAdult;    }    
+    public int getCountSenior(){      return countSenior;    }  
+    
+    private void jButtonPayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPayActionPerformed
         // TODO add your handling code here: 
 //        int bidAmount; 
-//        bidAmount = Integer.getInteger(jSpinner1.getValue().toString(),100); 
- 
+//        bidAmount = Integer.getInteger(jSpinner1.getValue().toString(),100);  
+
         DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("MMM dd YYYY HH:mm z");
         String text = ZonedDateTime.now().format(FORMATTER); 
         String name = jTextName.getText();
         boolean allLetters = name.chars().allMatch(Character::isLetter); 
         String errorMessage;
         
-        if (allLetters && name.length() > 0) {
-       /////// file write Start  
-            String data = "";
-            data = name + "," + jLabelContractID.getText() + "," + jSpinner1.getValue() + "," + text;
-//            try {  
-//                 Files.write(Paths.get("C:\\Users\\dojun\\Sync\\ICS125\\Labs\\Lab06\\SelectContract06\\dojun849\\src\\selectcontract\\output_bids.txt"), data.getBytes());
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            } 
-            BufferedWriter bw = null; 
-            try {
-               // APPEND MODE SET HERE
-               bw = new BufferedWriter(new FileWriter("C:\\Users\\C0472597\\Sync\\ICS125\\Labs\\Lab06\\SelectContract06\\dojun849\\src\\selectcontract\\output_bids.txt", true));
-               bw.write(data);
-               bw.newLine();
-               bw.flush();
-               errorMessage = "Your name as " + name + " with bid amount " + NumberFormat.getCurrencyInstance(new Locale("en", "CA")).format(jSpinner1.getValue()) + " has been successfully saved.";
-               displayErrorMessage(errorMessage);
-            } catch (IOException ioe) {
-               ioe.printStackTrace();
-            } finally {                       // always close the file
-               if (bw != null) try {
-                  bw.close();
-               } catch (IOException ioe2) {
-                  // just ignore it
-               }
-            }  
-       /////// file write End
-        }
-        else {
-            errorMessage = "You must input at least 1 letter with all alphabet!";
-            displayErrorMessage(errorMessage);
-        }
+//        if (allLetters && name.length() > 0) {
+//       /////// file write Start  
+//            String data = "";
+//            data = name + "," + jLabelmTitle.getText() + "," + jSpinnerChildren.getValue() + "," + text;
+////            try {  
+////                 Files.write(Paths.get("C:\\Users\\dojun\\Sync\\ICS125\\Labs\\Lab06\\SelectContract06\\dojun849\\src\\selectcontract\\output_bids.txt"), data.getBytes());
+////            } catch (IOException e) {
+////                e.printStackTrace();
+////            } 
+//            BufferedWriter bw = null; 
+//            try {
+//               // APPEND MODE SET HERE
+//               bw = new BufferedWriter(new FileWriter("C:\\Users\\C0472597\\Sync\\ICS125\\Labs\\Lab06\\SelectContract06\\dojun849\\src\\selectcontract\\output_bids.txt", true));
+//               bw.write(data);
+//               bw.newLine();
+//               bw.flush();
+//               errorMessage = "Your name as " + name + " with bid amount " + NumberFormat.getCurrencyInstance(new Locale("en", "CA")).format(jSpinnerChildren.getValue()) + " has been successfully saved.";
+//               displayErrorMessage(errorMessage);
+//            } catch (IOException ioe) {
+//               ioe.printStackTrace();
+//            } finally {                       // always close the file
+//               if (bw != null) try {
+//                  bw.close();
+//               } catch (IOException ioe2) {
+//                  // just ignore it
+//               }
+//            }  
+//       /////// file write End
+//        }
+//        else {
+//            errorMessage = "You must input at least 1 letter with all alphabet!";
+//            displayErrorMessage(errorMessage);
+//        }
         
         
-    }//GEN-LAST:event_jButtonSaveActionPerformed
+    }//GEN-LAST:event_jButtonPayActionPerformed
   void displayErrorMessage(String errorMessage){
      JOptionPane.showMessageDialog(this, errorMessage);
   }
@@ -220,21 +305,46 @@ public class ConfirmBid extends javax.swing.JDialog {
         dispose();
     }//GEN-LAST:event_jButtonCancelActionPerformed
 
+    private void Card1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Card1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Card1ActionPerformed
+
+    private void Card5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Card5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Card5ActionPerformed
+
+    private void Card6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Card6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Card6ActionPerformed
+ 
+    void addPayListener(ActionListener listenForPayButton){
+        jButtonPay.addActionListener(listenForPayButton);
+  }
     /**
      * @param args the command line arguments
      */
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField Card1;
+    private javax.swing.JTextField Card2;
+    private javax.swing.JTextField Card3;
+    private javax.swing.JTextField Card4;
+    private javax.swing.JTextField Card5;
+    private javax.swing.JTextField Card6;
     private javax.swing.JButton jButtonCancel;
-    private javax.swing.JButton jButtonSave;
+    private javax.swing.JButton jButtonPay;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabelContractID;
-    private javax.swing.JLabel jLabelDestination;
-    private javax.swing.JLabel jLabelOrder;
-    private javax.swing.JLabel jLabelOrigin;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabelGST;
+    private javax.swing.JLabel jLabelPST;
     private javax.swing.JLabel jLabelTitle;
-    private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JLabel jLabelTitle1;
+    private javax.swing.JLabel jLabelTitle2;
+    private javax.swing.JLabel jLabelTotal;
+    private javax.swing.JRadioButton jRadioCredit;
+    private javax.swing.JRadioButton jRadioDebit;
     private javax.swing.JTextField jTextName;
     // End of variables declaration//GEN-END:variables
 

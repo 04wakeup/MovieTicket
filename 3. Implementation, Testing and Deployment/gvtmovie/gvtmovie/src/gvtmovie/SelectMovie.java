@@ -17,7 +17,7 @@ public class SelectMovie {
     public static void main(String[] args) {
         // TODO code application logic here
         MovieView theView = new MovieView();
-        MovieModel theModel = new MovieModel();
+        MovieModel theModel = new MovieModel();  
         MovieController theController;
         theController = new MovieController(theView, theModel);
         theView.setVisible(true);

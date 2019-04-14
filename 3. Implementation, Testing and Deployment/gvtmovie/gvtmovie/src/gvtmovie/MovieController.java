@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ 
 package gvtmovie;  
 
 import java.awt.event.ActionEvent;
@@ -15,12 +11,15 @@ import java.util.SortedSet;
 class MovieController {
     
     private   MovieView theView;
-    private   MovieModel theModel;
+    private   MovieModel theModel; 
+    private   ConfirmBid theBid; 
   public MovieController(MovieView theView, MovieModel theModel) {
         this.theView = theView;
-        this.theModel = theModel;
+        this.theModel = theModel;  
         this.theView.addPrevListener(new PrevButtonListener());
         this.theView.addBidListener(new   BidButtonListener());
+         
+        
         this.theView.addNextListener(new NextButtonListener());
         this.theView.addcomboBoxListener(new ComboListener());
         this.theView.setMovieList(this.theModel.getMovieDate());//(this.theModel.getMovieDate());
@@ -121,14 +120,23 @@ class MovieController {
    class BidButtonListener implements ActionListener{
      @Override
      public void actionPerformed(ActionEvent e){
- 
+     System.out.println("test1");  
+     //String temp = theView.getCountChildren();
+     // System.out.println(theView.getCountChildren());
+//     System.out.println(theView.getCountChildren());
+//     System.out.println(theView.getCountAdult());
+//     System.out.println(theView.getCountSenior());
+        
         try{
             ConfirmBid cb;
-            Movie c = theModel.getTheMovie(); // add it james
-            
-            //cb = new ConfirmBid(theView, true, c);
-           // cb.setLocationRelativeTo(null);
-            //cb.setVisible(true);
+            Movie c = theModel.getTheMovie(); // get the index
+            c.setCountChildren(theView.getCountChildren());
+            c.setCountAdult(theView.getCountAdult());
+            c.setCountSenior(theView.getCountSenior());
+             
+            cb = new ConfirmBid(theView, true, c); 
+            cb.setLocationRelativeTo(null);
+            cb.setVisible(true);
            
         }catch(Exception ex){
            System.out.println(ex);
@@ -137,5 +145,7 @@ class MovieController {
         setUpDisplay();
      }  // git , project(git-add, commit) then team(remote-push!!!)
    }
+   
+
     
 }
