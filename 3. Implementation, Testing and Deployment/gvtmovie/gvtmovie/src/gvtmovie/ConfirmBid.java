@@ -58,6 +58,7 @@ public class ConfirmBid extends javax.swing.JDialog {
  
          String optionsFileName = System.getProperty("user.dir") + "\\output_movies.txt";
          jButtonPrint.setVisible(false);
+         jButtonReceipt.setVisible(false);
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -89,6 +90,7 @@ public class ConfirmBid extends javax.swing.JDialog {
         jLabel7 = new javax.swing.JLabel();
         jButtonPrint = new javax.swing.JButton();
         jComboPayMethod = new javax.swing.JComboBox<>();
+        jButtonReceipt = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Choose the deail for payment");
@@ -154,6 +156,13 @@ public class ConfirmBid extends javax.swing.JDialog {
 
         jComboPayMethod.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Credit", "Debit" }));
 
+        jButtonReceipt.setText("Receipt");
+        jButtonReceipt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonReceiptActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -191,9 +200,11 @@ public class ConfirmBid extends javax.swing.JDialog {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButtonCancel)
                                 .addGap(75, 75, 75)
-                                .addComponent(jButtonPrint))
+                                .addComponent(jButtonPrint)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButtonReceipt))
                             .addComponent(jTextName, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 106, Short.MAX_VALUE))
+                        .addGap(0, 5, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -249,7 +260,8 @@ public class ConfirmBid extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonPay)
                     .addComponent(jButtonCancel)
-                    .addComponent(jButtonPrint))
+                    .addComponent(jButtonPrint)
+                    .addComponent(jButtonReceipt))
                 .addGap(14, 14, 14))
         );
 
@@ -264,6 +276,8 @@ public class ConfirmBid extends javax.swing.JDialog {
          
         DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("MMM dd YYYY HH:mm z");
         String text = ZonedDateTime.now().format(FORMATTER); 
+        
+        
         String name = jTextName.getText();
         boolean allLetters = name.chars().allMatch(Character::isLetter); 
         String errorMessage;
@@ -287,7 +301,10 @@ public class ConfirmBid extends javax.swing.JDialog {
                //errorMessage = "Your name as " + name + " with bid amount " + NumberFormat.getCurrencyInstance(new Locale("en", "CA")).format(jSpinnerChildren.getValue()) + " has been successfully saved.";
                errorMessage = "Payment was successfully completed.";
                displayErrorMessage(errorMessage);
+               errorMessage = "If you want to refund, please visit ticket sales representative.";
+               displayErrorMessage(errorMessage);
                jButtonPrint.setVisible(true);
+               jButtonReceipt.setVisible(true);
             } catch (IOException ioe) {
                ioe.printStackTrace();
             } finally {                       // always close the file
@@ -365,9 +382,15 @@ public class ConfirmBid extends javax.swing.JDialog {
 
     private void jButtonPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPrintActionPerformed
         String errorMessage;
-        errorMessage = "Your ticket is printing.";
+        errorMessage = "Your ticket is printing....";
         displayErrorMessage(errorMessage);
     }//GEN-LAST:event_jButtonPrintActionPerformed
+                     
+    private void jButtonReceiptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonReceiptActionPerformed
+        String errorMessage;
+        errorMessage = "Your receipt is printing.....";
+        displayErrorMessage(errorMessage);
+    }//GEN-LAST:event_jButtonReceiptActionPerformed
  
     void addPayListener(ActionListener listenForPayButton){
         jButtonPay.addActionListener(listenForPayButton);
@@ -387,6 +410,7 @@ public class ConfirmBid extends javax.swing.JDialog {
     private javax.swing.JButton jButtonCancel;
     private javax.swing.JButton jButtonPay;
     private javax.swing.JButton jButtonPrint;
+    private javax.swing.JButton jButtonReceipt;
     private javax.swing.JComboBox<String> jComboPayMethod;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel5;

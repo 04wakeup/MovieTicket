@@ -1,36 +1,360 @@
-1,2019-05-01,12:00~14:00,Missing Link,James & Tom,G,Travel for missing link
-2,2019-05-01,14:00~16:00,Little,Murphy&Robert,PG,Story between girls
-3,2019-05-01,16:00~18:00,Avengers: Endgame,Hali&John,PG13,Action movies
-4,2019-05-01,18:00~20:00,After,Choi&Kim,R,Love story
-5,2019-05-01,20:00~22:00,Murder,Kevin&Dogulas,NC17,Horror movie ever
-6,2019-05-02,14:00~16:00,Missing Link,James & Tom,G,Travel for missing link
-7,2019-05-02,12:00~14:00,Little,Murphy&Robert,PG,Story between girls
-8,2019-05-02,12:00~14:00,Avengers: Endgame,Hali&John,PG13,Action movies
-9,2019-05-02,12:00~14:00,After,Choi&Kim,R,Love story
-10,2019-05-02,12:00~14:00,Murder,Kevin&Dogulas,NC17,Horror movie ever
-11,2019-05-03,12:30~14:30,Missing Link,James & Tom,G,Travel for missing link
-12,2019-05-03,12:00~14:00,Little,Murphy&Robert,PG,Story between girls
-13,2019-05-03,12:00~14:00,Avengers: Endgame,Hali&John,PG13,Action movies
-14,2019-05-03,12:00~14:00,After,Choi&Kim,R,Love story
-15,2019-05-03,12:00~14:00,Murder,Kevin&Dogulas,NC17,Horror movie ever
-16,2019-05-04,11:00~13:00,Missing Link,James & Tom,G,Travel for missing link
-17,2019-05-04,12:00~14:00,Little,Murphy&Robert,PG,Story between girls
-18,2019-05-04,12:00~14:00,Avengers: Endgame,Hali&John,PG13,Action movies
-19,2019-05-04,12:00~14:00,After,Choi&Kim,R,Love story
-20,2019-05-04,12:00~14:00,Murder,Kevin&Dogulas,NC17,Horror movie ever
-21,2019-05-05,12:00~14:00,Missing Link,James & Tom,G,Travel for missing link
-22,2019-05-05,12:00~14:00,Little,Murphy&Robert,PG,Story between girls
-23,2019-05-05,12:00~14:00,Avengers: Endgame,Hali&John,PG13,Action movies
-24,2019-05-05,12:00~14:00,After,Choi&Kim,R,Love story
-25,2019-05-05,12:00~14:00,Murder,Kevin&Dogulas,NC17,Horror movie ever
-26,2019-05-06,12:00~14:00,Missing Link,James & Tom,G,Travel for missing link
-27,2019-05-06,12:00~14:00,Little,Murphy&Robert,PG,Story between girls
-28,2019-05-06,12:00~14:00,Avengers: Endgame,Hali&John,PG13,Action movies
-29,2019-05-06,12:00~14:00,After,Choi&Kim,R,Love story
-30,2019-05-06,12:00~14:00,Murder,Kevin&Dogulas,NC17,Horror movie ever
-31,2019-05-07,12:00~14:00,Missing Link,James & Tom,G,Travel for missing link
-32,2019-05-07,12:00~14:00,Little,Murphy&Robert,PG,Story between girls
-33,2019-05-07,12:00~14:00,Avengers: Endgame,Hali&John,PG13,Action movies
-34,2019-05-07,12:00~14:00,After,Choi&Kim,R,Love story
-35,2019-05-07,12:00~14:00,Murder,Kevin&Dogulas,NC17,Horror movie ever
-36,2019-05-07,22:00~24:00,Murder,Kevin&Dogulas,NC17,Horror movie ever
+1,2019-04-14,10:00~12:00,Missing Link,James & Tom,NO CHILDREN(OVER17),Travel for missing link,MATINEES,6.75,6.75,6.75
+2,2019-04-14,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+3,2019-04-14,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+4,2019-04-14,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+5,2019-04-14,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+6,2019-04-14,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+7,2019-04-14,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+8,2019-04-14,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+9,2019-04-14,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+10,2019-04-14,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+11,2019-04-14,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+12,2019-04-14,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+13,2019-04-14,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+14,2019-04-14,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+15,2019-04-14,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+16,2019-04-15,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+17,2019-04-15,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+18,2019-04-15,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+19,2019-04-15,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+20,2019-04-15,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+21,2019-04-15,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+22,2019-04-15,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+23,2019-04-15,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+24,2019-04-15,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+25,2019-04-15,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+26,2019-04-15,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+27,2019-04-15,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+28,2019-04-15,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+29,2019-04-15,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+30,2019-04-15,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+31,2019-04-16,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+32,2019-04-16,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,TUE,10.99,14.25,11.5
+33,2019-04-16,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,TUE,10.99,14.25,11.5
+34,2019-04-16,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+35,2019-04-16,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,TUE,10.99,14.25,11.5
+36,2019-04-16,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,TUE,10.99,14.25,11.5
+37,2019-04-16,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+38,2019-04-16,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,TUE,10.99,14.25,11.5
+39,2019-04-16,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,TUE,10.99,14.25,11.5
+40,2019-04-16,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+41,2019-04-16,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,TUE,10.99,14.25,11.5
+42,2019-04-16,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,TUE,10.99,14.25,11.5
+43,2019-04-16,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+44,2019-04-16,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,TUE,10.99,14.25,11.5
+45,2019-04-16,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,TUE,10.99,14.25,11.5
+46,2019-04-17,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+47,2019-04-17,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+48,2019-04-17,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+49,2019-04-17,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+50,2019-04-17,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+51,2019-04-17,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+52,2019-04-17,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+53,2019-04-17,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+54,2019-04-17,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+55,2019-04-17,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+56,2019-04-17,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+57,2019-04-17,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+58,2019-04-17,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+59,2019-04-17,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+60,2019-04-17,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+61,2019-04-18,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+62,2019-04-18,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+63,2019-04-18,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+64,2019-04-18,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+65,2019-04-18,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+66,2019-04-18,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+67,2019-04-18,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+68,2019-04-18,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+69,2019-04-18,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+70,2019-04-18,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+71,2019-04-18,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+72,2019-04-18,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+73,2019-04-18,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+74,2019-04-18,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+75,2019-04-18,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+76,2019-04-19,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+77,2019-04-19,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+78,2019-04-19,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+79,2019-04-19,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+80,2019-04-19,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+81,2019-04-19,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+82,2019-04-19,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+83,2019-04-19,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+84,2019-04-19,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+85,2019-04-19,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+86,2019-04-19,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+87,2019-04-19,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+88,2019-04-19,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+89,2019-04-19,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+90,2019-04-19,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+91,2019-04-20,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+92,2019-04-20,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+93,2019-04-20,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+94,2019-04-20,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+95,2019-04-20,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+96,2019-04-20,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+97,2019-04-20,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+98,2019-04-20,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+99,2019-04-20,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+100,2019-04-20,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+101,2019-04-20,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+102,2019-04-20,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+103,2019-04-20,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+104,2019-04-20,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+105,2019-04-20,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+106,2019-04-21,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+107,2019-04-21,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+108,2019-04-21,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+109,2019-04-21,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+110,2019-04-21,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+111,2019-04-21,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+112,2019-04-21,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+113,2019-04-21,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+114,2019-04-21,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+115,2019-04-21,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+116,2019-04-21,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+117,2019-04-21,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+118,2019-04-21,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+119,2019-04-21,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+120,2019-04-21,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+121,2019-04-22,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+122,2019-04-22,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+123,2019-04-22,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+124,2019-04-22,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+125,2019-04-22,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+126,2019-04-22,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+127,2019-04-22,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+128,2019-04-22,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+129,2019-04-22,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+130,2019-04-22,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+131,2019-04-22,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+132,2019-04-22,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+133,2019-04-22,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+134,2019-04-22,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+135,2019-04-22,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+136,2019-04-23,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+137,2019-04-23,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,TUE,10.99,14.25,11.5
+138,2019-04-23,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,TUE,10.99,14.25,11.5
+139,2019-04-23,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+140,2019-04-23,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,TUE,10.99,14.25,11.5
+141,2019-04-23,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,TUE,10.99,14.25,11.5
+142,2019-04-23,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+143,2019-04-23,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,TUE,10.99,14.25,11.5
+144,2019-04-23,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,TUE,10.99,14.25,11.5
+145,2019-04-23,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+146,2019-04-23,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,TUE,10.99,14.25,11.5
+147,2019-04-23,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,TUE,10.99,14.25,11.5
+148,2019-04-23,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+149,2019-04-23,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,TUE,10.99,14.25,11.5
+150,2019-04-23,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,TUE,10.99,14.25,11.5
+151,2019-04-24,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+152,2019-04-24,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+153,2019-04-24,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+154,2019-04-24,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+155,2019-04-24,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+156,2019-04-24,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+157,2019-04-24,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+158,2019-04-24,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+159,2019-04-24,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+160,2019-04-24,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+161,2019-04-24,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+162,2019-04-24,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+163,2019-04-24,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+164,2019-04-24,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+165,2019-04-24,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+166,2019-04-25,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+167,2019-04-25,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+168,2019-04-25,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+169,2019-04-25,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+170,2019-04-25,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+171,2019-04-25,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+172,2019-04-25,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+173,2019-04-25,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+174,2019-04-25,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+175,2019-04-25,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+176,2019-04-25,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+177,2019-04-25,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+178,2019-04-25,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+179,2019-04-25,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+180,2019-04-25,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+181,2019-04-26,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+182,2019-04-26,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+183,2019-04-26,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+184,2019-04-26,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+185,2019-04-26,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+186,2019-04-26,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+187,2019-04-26,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+188,2019-04-26,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+189,2019-04-26,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+190,2019-04-26,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+191,2019-04-26,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+192,2019-04-26,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+193,2019-04-26,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+194,2019-04-26,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+195,2019-04-26,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+196,2019-04-27,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+197,2019-04-27,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+198,2019-04-27,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+199,2019-04-27,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+200,2019-04-27,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+201,2019-04-27,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+202,2019-04-27,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+203,2019-04-27,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+204,2019-04-27,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+205,2019-04-27,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+206,2019-04-27,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+207,2019-04-27,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+208,2019-04-27,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+209,2019-04-27,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+210,2019-04-27,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+211,2019-04-28,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+212,2019-04-28,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+213,2019-04-28,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+214,2019-04-28,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+215,2019-04-28,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+216,2019-04-28,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+217,2019-04-28,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+218,2019-04-28,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+219,2019-04-28,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+220,2019-04-28,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+221,2019-04-28,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+222,2019-04-28,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+223,2019-04-28,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+224,2019-04-28,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+225,2019-04-28,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+226,2019-04-29,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+227,2019-04-29,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+228,2019-04-29,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+229,2019-04-29,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+230,2019-04-29,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+231,2019-04-29,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+232,2019-04-29,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+233,2019-04-29,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+234,2019-04-29,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+235,2019-04-29,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+236,2019-04-29,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+237,2019-04-29,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+238,2019-04-29,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+239,2019-04-29,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+240,2019-04-29,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+241,2019-04-30,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+242,2019-04-30,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,TUE,10.99,14.25,11.5
+243,2019-04-30,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,TUE,10.99,14.25,11.5
+244,2019-04-30,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+245,2019-04-30,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,TUE,10.99,14.25,11.5
+246,2019-04-30,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,TUE,10.99,14.25,11.5
+247,2019-04-30,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+248,2019-04-30,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,TUE,10.99,14.25,11.5
+249,2019-04-30,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,TUE,10.99,14.25,11.5
+250,2019-04-30,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+251,2019-04-30,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,TUE,10.99,14.25,11.5
+252,2019-04-30,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,TUE,10.99,14.25,11.5
+253,2019-04-30,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+254,2019-04-30,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,TUE,10.99,14.25,11.5
+255,2019-04-30,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,TUE,10.99,14.25,11.5
+256,2019-05-01,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+257,2019-05-01,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+258,2019-05-01,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+259,2019-05-01,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+260,2019-05-01,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+261,2019-05-01,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+262,2019-05-01,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+263,2019-05-01,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+264,2019-05-01,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+265,2019-05-01,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+266,2019-05-01,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+267,2019-05-01,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+268,2019-05-01,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+269,2019-05-01,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+270,2019-05-01,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+271,2019-05-02,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+272,2019-05-02,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+273,2019-05-02,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+274,2019-05-02,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+275,2019-05-02,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+276,2019-05-02,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+277,2019-05-02,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+278,2019-05-02,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+279,2019-05-02,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+280,2019-05-02,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+281,2019-05-02,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+282,2019-05-02,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+283,2019-05-02,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+284,2019-05-02,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+285,2019-05-02,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+286,2019-05-03,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+287,2019-05-03,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+288,2019-05-03,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+289,2019-05-03,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+290,2019-05-03,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+291,2019-05-03,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+292,2019-05-03,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+293,2019-05-03,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+294,2019-05-03,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+295,2019-05-03,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+296,2019-05-03,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+297,2019-05-03,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+298,2019-05-03,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+299,2019-05-03,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+300,2019-05-03,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+301,2019-05-04,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+302,2019-05-04,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+303,2019-05-04,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+304,2019-05-04,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+305,2019-05-04,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+306,2019-05-04,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+307,2019-05-04,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+308,2019-05-04,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+309,2019-05-04,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+310,2019-05-04,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+311,2019-05-04,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+312,2019-05-04,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+313,2019-05-04,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+314,2019-05-04,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+315,2019-05-04,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+316,2019-05-05,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+317,2019-05-05,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+318,2019-05-05,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+319,2019-05-05,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+320,2019-05-05,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+321,2019-05-05,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+322,2019-05-05,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+323,2019-05-05,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+324,2019-05-05,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+325,2019-05-05,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+326,2019-05-05,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+327,2019-05-05,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+328,2019-05-05,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+329,2019-05-05,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+330,2019-05-05,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+331,2019-05-06,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+332,2019-05-06,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+333,2019-05-06,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,GENERAL,7.99,10.99,8.5
+334,2019-05-06,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+335,2019-05-06,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+336,2019-05-06,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,GENERAL,7.99,10.99,8.5
+337,2019-05-06,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+338,2019-05-06,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+339,2019-05-06,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,GENERAL,7.99,10.99,8.5
+340,2019-05-06,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+341,2019-05-06,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+342,2019-05-06,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,GENERAL,7.99,10.99,8.5
+343,2019-05-06,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+344,2019-05-06,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+345,2019-05-06,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,GENERAL,7.99,10.99,8.5
+346,2019-05-07,10:00~12:00,Missing Link,James & Tom,GENERAL,Travel for missing link,MATINEES,6.75,6.75,6.75
+347,2019-05-07,12:00~14:00,Missing Link,James & Tom,GENERAL,Travel for missing link,TUE,10.99,14.25,11.5
+348,2019-05-07,18:00~20:00,Missing Link,James & Tom,GENERAL,Travel for missing link,TUE,10.99,14.25,11.5
+349,2019-05-07,10:00~12:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,MATINEES,6.75,6.75,6.75
+350,2019-05-07,12:00~14:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,TUE,10.99,14.25,11.5
+351,2019-05-07,18:00~20:00,Little,Murphy&Robert,PARENTAL  GUIDANCE,Story between girls,TUE,10.99,14.25,11.5
+352,2019-05-07,10:00~12:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,MATINEES,6.75,6.75,6.75
+353,2019-05-07,12:00~14:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,TUE,10.99,14.25,11.5
+354,2019-05-07,18:00~20:00,Avengers: Endgame,Hali&John,PARENTAL GUIDANCE(OVER13),Action movies,TUE,10.99,14.25,11.5
+355,2019-05-07,10:00~12:00,After,Choi&Kim,RESTRICTED,Love story,MATINEES,6.75,6.75,6.75
+356,2019-05-07,12:00~14:00,After,Choi&Kim,RESTRICTED,Love story,TUE,10.99,14.25,11.5
+357,2019-05-07,18:00~20:00,After,Choi&Kim,RESTRICTED,Love story,TUE,10.99,14.25,11.5
+358,2019-05-07,10:00~12:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,MATINEES,6.75,6.75,6.75
+359,2019-05-07,12:00~14:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,TUE,10.99,14.25,11.5
+360,2019-05-07,18:00~20:00,Murder,Kevin&Dogulas,NO CHILDREN(OVER17),Horror movie ever,TUE,10.99,14.25,11.5
